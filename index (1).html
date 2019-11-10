@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Felician Board Meeting</title>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css'>
+  <link rel="stylesheet" type="text/css" href="style (1).css">
+  <script src="https://kit.fontawesome.com/f1a03565c4.js" crossorigin="anonymous"></script>
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+<body translate="no">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Felican University</title>
+</head>
+<body>
+  <div class="menu">
+    <i class="profile fas fa-user-circle"></i>
+  </div>
+  <div class="wrapper">
+    <div class="container-search">
+    <img src="Felician-03.png">
+    <div class="container-input">
+    <input type="text" list="psychology_theories_list" id="psychology_theories_search" class="search-term" placeholder="Search for date, name etc.">
+    <button type="submit" class="search-button" id="selectTheory">
+    <i class="fa fa-search"></i>
+    </button>
+    <datalist id="psychology_theories_list">
+    <option value="home" />
+    <option value="section_1" />
+    <option value="section_2" />
+    </datalist>
+    </div>
+    <ul class="search-history">
+    <li>
+    <span class="text"><a href="#">15 October 2019 Meeting</a></span>
+    <a href="#" class="link"></a>
+    </li>
+    <li>
+    <span class="text"><a href="#">26 January 2020 Meeting</a></span>
+    <a href="#" class="link"></a>
+    </li>
+    <li>
+    <span class="text"><a href="#">Dr.Prisco Welcome Message</a></span>
+    <a href="#" class="link"></a>
+    </li>
+    <li>
+    <span class="text"><a href="#">Computer Science Departement Documentation</a></span>
+    <a href="#" class="link"></a>
+    </li>
+    </ul>
+    </div>
+  </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js'></script>
+<script id="rendered-js">
+      $("#selectTheory").on('click', function () {
+
+  var editing_page = $("#psychology_theories_search").val();
+
+  if ($('#psychology_theories_list option').filter(function () {
+    return this.value === editing_page;
+  }).length) {
+    //send ajax request
+    alert(editing_page);
+  }
+});
+      //# sourceURL=pen.js
+    </script>
+</body>
+</html>
